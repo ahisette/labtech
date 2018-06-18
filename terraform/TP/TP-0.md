@@ -1,4 +1,4 @@
-#Découverte Terraform
+# Découverte Terraform
 
 Dans cette partie, on va installer terraform et les pré-requis pour pouvoir créer un serveur.
 
@@ -7,7 +7,7 @@ Dans cette partie, on va installer terraform et les pré-requis pour pouvoir cr�
 *__Terraform utilise un language descriptif et non évènementiel__*
 
 
-## Installation de Terraform
+## Installation de Terraform
 Terraform se présente sous forme d'un unique binaire (écrit en Go)
 Pour le téléchargement se rendre sur https://www.terraform.io/downloads.html.  
 Et choisir le selon son votre OS.  
@@ -16,7 +16,7 @@ Mettre le binaire dans votre PATH.
 Pour vérifier que votre installation est correct: `terraform version`  
 Vous devez avoir avoir une réponse du style `Terraform v0.11.7`
 
-## Pré-requis AWS
+## Pré-requis AWS
 Comme nous allons déployer des ressources sur AWS, nous allons devoir faire en sorte que terraform s'authentifie sur AWS. Pour cela nous allons utiliser les access_key et secret_key.   
 Connecter sur la console aws avec vos identifiants que vous avez déjà eu normalement.   
 Aller sur la partie IAM et sur Users.  
@@ -24,7 +24,7 @@ Selectionner votre user et dans l'onglet Security Credentials, cliquez sur Creat
 
 __Le couple access_key, secret_key est lié à votre user et donc à les même droits__
 
-## Premier déploiement
+## Premier déploiement
 Alors on va enfin rentrer dans le vif du sujet.
 
 Terraform va prendre en compte tous les fichiers qui se trouve dans le répertoire courant. Il ne fait de récursif.
